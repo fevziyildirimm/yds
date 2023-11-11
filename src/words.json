@@ -1,0 +1,55 @@
+
+{
+  "words": [
+    {
+      "word": "ISTEKLI / ILIMLI",
+      "synonyms": ["Willing to ", "Eager to", "Keen on / to"]
+    },
+    {
+      "word": "IYiMSER",
+      "synonyms": ["Optimistic", "Hopeful"]
+    },
+    {
+      "word": "Kötümser",
+      "synonyms": ["Pessimistic"]
+    },
+    {
+      "word": "CILGIN / DELI",
+      "synonyms": ["Crazy", "Mad", "Insane"]
+    },
+    {
+      "word": "DÜSÜNCESIZ / UMURSAMAZ",
+      "synonyms": ["Thoughtless", "Reckless", "Careless", "Irresponsible"]
+    },
+    {
+      "word": "ZENGIN / VARLIKLI",
+      "synonyms": ["Rich", "Wealthy", "Prosperous", "Affluent"]
+    },
+    {
+      "word": "GEÇICI / ANLIK",
+      "synonyms": ["Temporary", "Momentary"]
+    }
+    ,
+    {
+      "word": "TUTARLI / KALICI",
+      "synonyms": ["Consistent", "Stable", "Steady", "Fixed","Persistent"]
+    },
+    {
+      "word": "EMIN / KENDINE GÜVENEN/ KESIN",
+      "synonyms": ["Confident", "Sure", "Certain", "Assured"]
+    },
+    {
+      "word": "ISYANKAR / SAVURGAN",
+      "synonyms": ["Rebellious", "Disobedient"]
+    },
+    {
+      "word": "EMIN / KENDINE GÜVENEN/ KESIN",
+      "synonyms": ["Confident", "Sure", "Certain", "Assured"]
+    },
+    {
+      "word": "DEGISEN / DALGALANAN",
+      "synonyms": ["Changing", "Fluctuating", "Unsteady"]
+    }
+    
+  ]
+}

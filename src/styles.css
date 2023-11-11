@@ -1,0 +1,9 @@
+.list-group-item-correct {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .list-group-item-wrong {
+    background-color: #dc3545;
+    color: #fff;
+  }
