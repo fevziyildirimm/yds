@@ -1,4 +1,5 @@
 {
+  "homepage": "https://fevziyildirimm.github.io/yds",
   "name": "yds",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.1",
     "bootstrap": "^5.3.2",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
@@ -15,10 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "../../Dev/yds/node_modules/.bin/react-scripts start",
+    "build": "../../Dev/yds/node_modules/.bin/react-scripts build",
+    "test": "../../Dev/yds/node_modules/.bin/react-scripts test",
+    "eject": "../../Dev/yds/node_modules/.bin/react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
