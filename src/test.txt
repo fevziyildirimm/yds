@@ -1,0 +1,65 @@
+// src/components/Flashcard.js
+
+import React, { useState, useEffect } from 'react';
+import './flashcard.css';
+import wordsData from './wordsFlash.json'; // JSON verisini import et
+import { useSwipeable } from 'react-swipeable'; // react-swipeable'ı import et
+
+const Flashcard = () => {
+  const [words, setWords] = useState([]);
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  useEffect(() => {
+    setWords(wordsData); // JSON verisini state'e set et
+  }, []);
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleSwipeLeft(),
+    onSwipedRight: () => handleSwipeRight(),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
+  const handleSwipeRight = () => {
+    if (currentWordIndex < words.length - 1) {
+      setCurrentWordIndex(currentWordIndex + 1);
+      setShowAnswer(false);
+    }
+  };
+
+  const handleSwipeLeft = () => {
+    if (currentWordIndex < words.length - 1) {
+      setCurrentWordIndex(currentWordIndex + 1);
+      setShowAnswer(false);
+    }
+  };
+
+  const handleCardClick = () => {
+    setShowAnswer(!showAnswer);
+  };
+
+  return (
+    <div className="flashcard-container" {...handlers}>
+      <div
+        className={`flashcard ${showAnswer ? 'show-answer' : ''}`}
+        onClick={handleCardClick}
+      >
+        <div className="flashcard-content">
+          <div className="flashcard-front">
+            <p>{words[currentWordIndex]?.english}</p>
+          </div>
+          <div className="flashcard-back">
+            <p>{words[currentWordIndex]?.turkish}</p>
+          </div>
+        </div>
+      </div>
+      <div className="navigation-buttons">
+        <button onClick={handleSwipeLeft}>Sola Kaydır</button>
+        <button onClick={handleSwipeRight}>Sağa Kaydır</button>
+      </div>
+    </div>
+  );
+};
+
+export default Flashcard;

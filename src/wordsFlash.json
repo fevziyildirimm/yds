@@ -1,0 +1,9 @@
+[
+    { "english": "1Hello", "turkish": "Merhaba", "unit": 1 },
+    { "english": "2Goodbye", "turkish": "Hoşça kal", "unit": 2 },
+    { "english": "1Apple", "turkish": "Elma", "unit": 1 },
+    { "english": "2Car", "turkish": "Araba", "unit": 2 },
+    { "english": "1House", "turkish": "Ev", "unit": 1 },
+    { "english": "3Computer", "turkish": "Bilgisayar", "unit": 3 }
+  ]
+  
